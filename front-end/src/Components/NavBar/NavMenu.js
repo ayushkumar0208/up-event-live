@@ -31,7 +31,7 @@ class NavMenuBar extends Component {
         <div className="logo">
           <img
             id="logo-image"
-            src="https://www.pngkey.com/png/full/352-3520852_restaurant-logo-design-png.png"
+            src="/logo.png"
             alt=""
           />
         </div>

@@ -7,7 +7,7 @@ class NavMenuBar extends Component {
     changeColor: false,
   };
 
-  logout = (e) => {
+  logout = (e) => { 
     e.preventDefault();
     this.props.setLoginUser({});
   };

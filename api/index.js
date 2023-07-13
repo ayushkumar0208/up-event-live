@@ -33,6 +33,18 @@ app.use(cors({
   credentials:true
 }));
 app.use(morgan("common"));
+app.use(express.static(path.join(__dirname, "../frontend/build")));
+
+app.get("*", function(_, res) {
+    res.sendFile(
+        path.join(__dirname, "../front-end/build/index.html"),
+        function (err) {
+            if(err) {
+                res.status(500).send(err)
+            }
+        }
+    )
+})
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {

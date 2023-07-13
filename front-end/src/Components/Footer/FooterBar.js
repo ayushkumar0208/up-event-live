@@ -10,10 +10,9 @@ function FooterBar() {
         <div className="footer-heading">
           <img
             id="footer-logo"
-            src="https://www.pngkey.com/png/full/352-3520852_restaurant-logo-design-png.png"
+            src="/logo.png"
             alt=""
           />
-          <p className="site-name">UpEvent</p>
         </div>
         <div className="line"></div>
         <div className="footer-options">

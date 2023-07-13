@@ -33,7 +33,7 @@ function App() {
     // console.log(Link);
   });
   return (
-    <Router>
+    <Router basename='/'>
       <div>
         <Routes>
           <Route
